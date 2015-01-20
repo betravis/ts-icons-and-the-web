@@ -41,8 +41,10 @@ $darkTan: rgb(136, 120, 104);
 
 $mainBackgroundColor: desaturate(rgb(89, 65, 56), 20);
 $mainContentColor: lighten(desaturate(rgb(242, 223, 206), 20), 10);
-$alternateBackgroundColor: darken(desaturate(rgb(217, 187, 160), 20), 10);
-$alternateContentColor: rgb(89, 65, 56);
+$titleBackgroundColor: darken(desaturate(rgb(217, 187, 160), 20), 40);
+$titleContentColor: $mainContentColor; //rgb(89, 65, 56);
+$topicBackgroundColor: $mainContentColor;
+$topicContentColor: $mainBackgroundColor;
 
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'Adobe Clean', 'Source Sans Pro', sans-serif;
@@ -66,15 +68,28 @@ svg use {
     @include vendor-prefix(transition, background-color 400ms ease);
 }
 
-.topic {
-    color: $alternateContentColor;
+.title .reveal {
+    color: $titleContentColor;
     h1, h2, h2, h4, h5, h6 {
-        color: $alternateContentColor;
+        color: $titleContentColor;
     }
     .state-background {
-        background-color: darken($alternateBackgroundColor, 30%);
+        background-color: $titleBackgroundColor;
         background-image: url(../../resources/icon-bg-tile.png);
         background-blend-mode: multiply;
+    }
+}
+
+.topic .reveal {
+    color: $topicContentColor;
+    h1, h2, h2, h4, h5, h6 {
+        color: $topicContentColor;
+    }
+    .state-background {
+        background-color: $topicBackgroundColor;
+        background-image: url(../../resources/icon-bg-tile.png);
+        background-blend-mode: multiply;
+        opacity: 0.8;
     }
 }
 

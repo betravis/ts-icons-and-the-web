@@ -1,12 +1,107 @@
 <section data-state='topic'>
-    <h2>Summary</h2>
+    <h2>Which one should I use?</h2>
 </section>
 
 <section>
-    <p class='big'>Use whatever makes your life easier.<br/> I recommend <span class='small-caps'>SVG</span> where possible.</p>
+    <section>
+        <h2>A quick recap</h2>
+    </section>
 </section>
 
-<section data-state='topic'>
+<section>
+    <section>
+        <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox='0 0 45 55'>
+                <use xlink:href='resources/farm-animals-monotone.svg#pig-monotone' />
+            </svg>
+            Icon Fonts</h2>
+    </section>
+    <section>
+        <h2>What&rsquo;s good</h2>
+        <ul>
+            <li>Scalable</li>
+            <li>Stylable</li>
+            <li>Solid browser support</li>
+        </ul>
+        <aside class='notes'>
+            * http://filamentgroup.com/lab/bulletproof_icon_fonts.html
+            * Thoughts: http://ianfeather.co.uk/ten-reasons-we-switched-from-an-icon-font-to-svg/
+            * Browser font adjustments: a little bold, a little light, antialiased, whatever -- not as much control
+            * Positioning can feel a little awkward, absolute, line-height
+            * Fallbacks can be weird
+            * Square peg, round hole and all that
+            * BUT, especially if you are interspersing icons and text, can work well
+            * And, supported as well as fonts on the web -- pretty well (need to test)
+            * But it's still pretty hacky
+        </aside>
+    </section>
+    <section>
+    <h2>What&rsquo;s not</h2>
+        <ul>
+            <li>Imprecise size &amp; positioning</li>
+            <li>Verbose accessibility &amp; fallbacks</li>
+            <li>Difficult to author fonts</li>
+        </ul>
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>
+            <img class='plain' src='resources/cow-raster.png' />
+            Raster Icons</h2>
+    </section>
+    <section>
+        <h2>What&rsquo;s Good</h2>
+        <ul>
+            <li>Pixel-level control</li>
+            <li>Browser support</li>
+        </ul>
+    </section>
+    <section>
+        <h2>What&rsquo;s Not</h2>
+        <ul>
+            <li>Fixed size &amp; resolution</li>
+            <li>Limited packaging support</li>
+        </ul>
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox='0 0 45 55'>
+                <use xlink:href='resources/farm-animals-monotone.svg#rabbit-duotone' style="fill:#acf0f2" />
+            </svg>
+            SVG Icons</h2>
+    </section>
+    <section>
+        <h2>What&rsquo;s Good</h2>
+        <ul>
+            <li>Individual or packaged icons</li>
+            <li>Vector based</li>
+            <li>Use as image</li>
+            <li>Many tool options</li>
+        </ul>
+    </section>
+    <section>
+        <h2>What&rsquo;s Not</h2>
+        <ul>
+            <li>Browser support</li>
+        </ul>
+    </section>
+</section>
+
+<section>
+    <section>
+        <p class='big'>SVG is your best bet for most cases, especially when coupled with a raster fallback.</p>
+    </section>
+    <section>
+        <p class='big'>Use whatever makes your life easier.</p>
+    </section>    
+</section>
+
+<section data-state='title'>
     <h2>Thanks!</h2>
     <ul>
         <li>Bulletproof font icons by <a href='http://www.filamentgroup.com/lab/bulletproof_icon_fonts.html'>filament group</a></li>
