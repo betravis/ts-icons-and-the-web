@@ -68,18 +68,43 @@ svg use {
     @include vendor-prefix(transition, background-color 400ms ease);
 }
 
+$adobeTitleBackgroundColor: rgb(125, 0, 110);
 .title .reveal {
+    .byline { margin-left: 0.2em; margin-top: -0.4em; font-size: 1.2em; }
+    .ribbon-underlay {
+        margin-left: -999em;
+        margin-right: -999em;
+        padding-left: 999em;
+        padding-right: 999em;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding-top: 0.2em;
+        padding-bottom: 0.8em;
+    }
     color: $titleContentColor;
     h1, h2, h2, h4, h5, h6 {
         color: $titleContentColor;
     }
     .state-background {
-        background-color: $titleBackgroundColor;
-        background-image: url(../../resources/icon-bg-tile.png);
-        background-blend-mode: multiply;
+        background-color: $adobeTitleBackgroundColor;
+        background-size: 39px 64px, cover;
+        background-position: top right 2em, center center;
+        background-repeat: no-repeat;
+        background-image: url(../../resources/adobe/adobe-tag.png), url(../../resources/adobe/city-title.jpeg);
+        xbackground-blend-mode: multiply;
     }
 }
 
+.closing .reveal {
+    color: $titleContentColor;
+    h1, h2, h3, h4, h5, h6 {
+        color: $titleContentColor;
+    }
+    .state-background {
+        background-color: $adobeTitleBackgroundColor;
+        background-size: cover;
+        background-image: url(../../resources/adobe/radial-gradient.png), url(../../resources/adobe/city-blurred.jpeg);
+    }
+}
 .topic .reveal {
     color: $topicContentColor;
     h1, h2, h2, h4, h5, h6 {
