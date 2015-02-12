@@ -34,11 +34,11 @@
         <table class='support'><!--
             {
                 "ie": { "version": "9", "support": "support highlight" },
-                "ff": { "version": "30", "support": "support" },
-                "cr": { "version": "27", "support": "support" },
-                "s": { "version": "5.1", "support": "support" },
-                "o": { "version": "23", "support": "support" },
-                "ios": { "version" : "6.1", "support": "support" },
+                "ff": { "version": "&#x2713;", "support": "support" },
+                "cr": { "version": "&#x2713;", "support": "support" },
+                "s": { "version": "&#x2713;", "support": "support" },
+                "o": { "version": "&#x2713;", "support": "support" },
+                "ios": { "version" : "&#x2713;", "support": "support" },
                 "a": { "version": "4.4", "support": "support highlight" }
             }
         --></table>
@@ -144,10 +144,10 @@
         <table class='support'><!--
         {
             "ie": { "version": "9", "support": "support highlight" },
-            "ff": { "version": "32", "support": "support" },
-            "cr": { "version": "37", "support": "support" },
+            "ff": { "version": "&#x2713;", "support": "support" },
+            "cr": { "version": "&#x2713;", "support": "support" },
             "s": { "version": "7.1", "support": "partial-support highlight" },
-            "o": { "version": "24", "support": "support" },
+            "o": { "version": "&#x2713;", "support": "support" },
             "ios": { "version": "8", "support": "partial-support highlight" },
             "a": { "version": "4.3", "support": "no-support highlight" }
         }
@@ -221,14 +221,28 @@
         <table class='support'><!--
         {
             "ie": { "version": "11", "support": "no-support highlight" },
-            "ff": { "version": "32", "support": "support" },
-            "cr": { "version": "37", "support": "support" },
-            "s": { "version": "7", "support": "support" },
-            "o": { "version": "24", "support": "support" },
-            "ios": { "version": "8", "support": "support" },
+            "ff": { "version": "&#x2713;", "support": "support" },
+            "cr": { "version": "&#x2713;", "support": "support" },
+            "s": { "version": "&#x2713;", "support": "support" },
+            "o": { "version": "&#x2713;", "support": "support" },
+            "ios": { "version": "&#x2713;", "support": "support" },
             "a": { "version": "4.3", "support": "support highlight" }
         }
         --></table>
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>SVG with Fallbacks</h2>
+    </section>
+    <section>
+    <pre><code class="css"><!--
+        .icon-fox { background: url('fox.svg'); }
+        .no-svg-support .icon-fox {
+            background: url('fox.png');
+        }
+    --></code></pre>
     </section>
 </section>
 
