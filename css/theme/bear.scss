@@ -87,7 +87,7 @@ $adobeTitleBackgroundColor: rgb(125, 0, 110);
     .state-background {
         background-color: $adobeTitleBackgroundColor;
         background-size: 39px 64px, cover;
-        background-position: top right 2em, center center;
+        background-position: top left 2em, center center;
         background-repeat: no-repeat;
         background-image: url(../../resources/adobe/adobe-tag.png), url(../../resources/adobe/city-title.jpeg);
         xbackground-blend-mode: multiply;
